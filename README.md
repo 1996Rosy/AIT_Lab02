@@ -3,9 +3,11 @@
 1. Choose a home directory, preferably your own, for which to create a backup. A full uncompressed backup should fill the ext4 partition of the backup disk to not more than 50%. If the home directory is too big, choose an appropriate sub-tree. To find out how much space is occupied by a directory tree you can use the command du -sh <directory>. The directory will be called the source directory.
 
 **ANSWER :**
+
 We choose to create a backup of the home directory /home/rosy since it is very small.
 
 **SCREENSHOTS :**
+
 ![](img/du1.png)
 
 
@@ -29,6 +31,7 @@ Finally, we create the rosy_backup directory and change the owner of the directo
 3. Perform an initial copy of the source directory to the backup directory.
 
 **SCREENSHOTS:**
+
 ![](img/yes.png)
 
 
@@ -92,15 +95,20 @@ We performed the incremental backup using hard_links
 
 ![](img/du2.png)
 
-How much disk space is used by the backup directory according to the du command?
++ How much disk space is used by the backup directory according to the du command?
+
 **ANSWER :**
+
 The backup directory occupies 7.5M of the disk space
 
-How much by the individual snapshot directories? 
++ How much by the individual snapshot directories? 
+
 **ANSWER :**
+
 Each individual snapshot occupies 3.7M of the disk space
 
-How do you explain what du displays (if you had to write the du command, how would you count hard links)?
++ How do you explain what du displays (if you had to write the du command, how would you count hard links)?
+
 **ANSWER :**
 
 
@@ -109,6 +117,7 @@ How do you explain what du displays (if you had to write the du command, how wou
 **SCREENSHOTS :**
 
 ![](img/modify.png)
+
 ![](img/modify2.png)
 
 We modified one of the files named file.txt
@@ -136,7 +145,7 @@ This is the screenshot of the result of stat command for a file that has not cha
 
 **SCREENSHOTS :**
 
-![](img/delete.png)
+![](img/remove.png)
 
 ![](img/what.png)
 
