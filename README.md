@@ -10,7 +10,7 @@ We choose to create a backup of the home directory /home/rosy since it is very s
 
 ![](img/du1.png)
 
-
+-----
 2. On the backup disk, on the ext4 partition, create a directory called <username>\_backup that will contain the backup. Change the owner of this directory from root to the owner of the source directory so that (1) you do not need superuser rights to copy files into it and (2) the user can directly read files back from the directory without needing superuser rights. The directory will be called the backup directory.
 
 **SCREENSHOTS :**
@@ -28,6 +28,7 @@ Now we will mount the disk /dev/sdb2 to the directory mnt/backup so that we can 
 
 Finally, we create the rosy_backup directory and change the owner of the directory as required.
 
+-----
 3. Perform an initial copy of the source directory to the backup directory.
 
 **SCREENSHOTS:**
@@ -85,6 +86,7 @@ rsync -av /home/rosy/ $current_date`
 
 6.9M is the amount of space used by the backup directory.
 
+-----
 4. Without having modified a file in the source directory do an incremental backup using hard links. As before the name of the destination directory is the current timestamp.
 
 **SCREENSHOTS :**
@@ -111,7 +113,7 @@ Each individual snapshot occupies 3.7M of the disk space
 
 **ANSWER :**
 
-
+-----
 5. Modify a file in the source directory and perform another incremental backup like in the previous step.
 
 **SCREENSHOTS :**
